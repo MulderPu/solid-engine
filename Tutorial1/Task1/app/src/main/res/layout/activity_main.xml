@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
     <TextView
         android:text="@string/title"
@@ -13,5 +15,23 @@
         android:textColor="#FFFFFF"
         android:gravity="center_vertical|right"
         android:textSize="48sp"/>
-    
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/skating"
+        android:id="@+id/imageView"
+        android:layout_weight="1"
+        android:background="#000000"/>
+
+    <TextView
+        android:text="@string/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:background="#ff0000"
+        android:textColor="#FFFFFF"
+        android:gravity="center_vertical|center"
+        android:textSize="35sp"/>
+
 </LinearLayout>
