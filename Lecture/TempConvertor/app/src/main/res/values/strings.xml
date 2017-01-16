@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TempConvertor</string>
+    <string name="convert">Convert</string>
+    <string name="result">Result</string>
+    <string name="celcius">Celcius :</string>
+    <string name="one">1</string>
+    <string name="zero">0</string>
+    <string name="clear">Clear</string>
+</resources>

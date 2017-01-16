@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_light_me"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:onClick="toggleBulb"
+        app:srcCompat="@drawable/on"
+        android:id="@+id/onImageView" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        android:onClick="toggleBulb"
+        app:srcCompat="@drawable/off"
+        android:id="@+id/offImageView" />
+
+    <Button
+        android:text="@string/on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButton"
+        android:layout_gravity="center_horizontal"/>
+
+
+</FrameLayout>
