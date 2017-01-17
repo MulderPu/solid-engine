@@ -31,12 +31,13 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textMultiLine"
+                android:inputType="text"
                 android:ems="10"
-                android:imeOptions="actionNext|flagNoEnterAction"
+                android:imeOptions="actionNext"
                 android:text=""
                 android:id="@+id/editText"
-                android:hint="@string/enter_username"/>
+                android:hint="@string/enter_username"
+                android:nextFocusDown="@+id/editText2"/>
 
         </TableRow>
 
@@ -51,12 +52,12 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textMultiLine"
+                android:inputType="textPassword"
                 android:ems="10"
-                android:imeOptions="actionNext|flagNoEnterAction"
+                android:imeOptions="actionDone"
                 android:text=""
                 android:id="@+id/editText2"
-                android:hint="@string/enter_password"/>
+                android:hint="@string/enter_password" />
 
         </TableRow>
 

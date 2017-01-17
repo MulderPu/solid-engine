@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">LightMe</string>
     <string name="on_off">On/Off</string>
+    <string name="bulb_is_off">BULB is OFF</string>
 </resources>
