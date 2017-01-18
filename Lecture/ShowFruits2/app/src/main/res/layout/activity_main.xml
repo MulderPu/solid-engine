@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#000"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_few_food_items"
+        android:id="@+id/textView2"
+        android:textSize="24sp"
+        android:textColor="#fff"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:srcCompat="@drawable/food"
+        android:id="@+id/imageView" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:text="@string/fruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fruitButton"
+            android:layout_weight="1"
+            android:onClick="fruitBtnClickHandler"/>
+
+        <Button
+            android:text="@string/vegetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vegButton"
+            android:layout_weight="1"
+            android:onClick="vegBtnClickHandler"/>
+
+        <Button
+            android:text="@string/drink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drinkButton"
+            android:layout_weight="1"
+            android:onClick="drinkBtnClickHandler"/>
+    </LinearLayout>
+
+</LinearLayout>

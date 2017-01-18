@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fruit Items</string>
+    <string name="a_few_food_items">A Few Food Items</string>
+    <string name="fruit">fruit</string>
+    <string name="drink">Drink</string>
+    <string name="vegetable">Vegetable</string>
+</resources>
