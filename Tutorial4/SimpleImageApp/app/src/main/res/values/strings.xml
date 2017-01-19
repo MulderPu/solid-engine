@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SimpleImageApp</string>
+    <string name="select_image">Select an images :</string>
+    <string name="food_name">Food Name</string>
+    <string name="food_desc">Food Description :</string>
+    <string name="dot">...</string>
+    <string name="laksaDesc1">Laksa is a popular spicy noodle soup in the Peranakan cuisine, which is a combination of Chinese and Malay cuisine.\n\n</string>
+    <string name="laksaDesc2">It can be found in Malaysia, Singapore, Indonesia and Southern Thailand.</string>
+    <string name="nLemakDesc1">Nasi lemak is a Malay fragrant rice dish cooked in coconut milk and pandan leaf.\n\n</string>
+    <string name="nLemakDesc2">"It is commonly found in Malaysia, where it is considered the national dish.\n\n"</string>
+    <string name="nLemakDesc3">"It is also popular in neighbouring areas such as Singapore;"</string>
+    <string name="nLemakDesc4">" Riau Islands, Brunei, and Southern Thailand."</string>
+    <string name="kompiaDesc">Kompia or kompyang, is a bread product originates from Fuzhou, the capital city of Fujian Province of China.</string>
+    <string name="kuihTPDesc1">Kuih Tepubg Pelita is a type of cake traditionally hearty and tasty.\n\n</string>
+    <string name="kuihTPDesc2">It is a type of flour cakes are sweet but not durable.</string>
+</resources>
