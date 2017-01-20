@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ImageNote</string>
+    <string name="select_image_to_put_some_notes">Select image to put some notes!</string>
+    <string name="name">Name</string>
+    <string name="short_description">Short Description</string>
+    <string name="url">URL</string>
+    <string name="keywords">Keywords</string>
+    <string name="date_obtained">Date Obtained</string>
+    <string name="share_image">Share Image?</string>
+    <string name="owned_by_email">Owned by (Email)</string>
+    <string name="rate">Rate </string>
+    <string name="email">Email</string>
+    <string name="yes">Yes</string>
+    <string name="submit">Submit</string>
+</resources>
