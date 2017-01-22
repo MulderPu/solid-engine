@@ -1,13 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_result"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.mingf.imagenote.ResultActivity">
+    android:orientation="vertical"
+    tools:context="com.example.mingf.imagenote.ResultActivity"
+    android:background="#E0E0E0">
 
-</RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:id="@+id/imageView2"
+        android:layout_weight="1" />
+
+    <TableLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+
+        <TableRow>
+            <TextView
+                android:text="@string/name_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewName"
+                style="@style/FormCustomStyle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewName2"
+                style="@style/FormCustomStyle"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/short_description_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDesc"
+                style="@style/FormCustomStyle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDesc2"
+                style="@style/FormCustomStyle"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/url_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUrl"
+                style="@style/FormCustomStyle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUrl2"
+                style="@style/FormCustomStyle"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/keywords_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewKeywords"
+                style="@style/FormCustomStyle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewKeywords2"
+                style="@style/FormCustomStyle"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/date_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDate"
+                style="@style/FormCustomStyle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDate2"
+                style="@style/FormCustomStyle"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/share_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewShare"
+                style="@style/FormCustomStyle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewShare2"
+                style="@style/FormCustomStyle"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/email_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewEmail"
+                style="@style/FormCustomStyle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewEmail2"
+                style="@style/FormCustomStyle"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/rate_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewRate"
+                style="@style/FormCustomStyle"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_gravity="left"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
