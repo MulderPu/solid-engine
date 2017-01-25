@@ -21,11 +21,48 @@
         >
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/fruit"
             android:id="@+id/imageView"
             android:layout_weight="1"
-            android:onClick="fruitBtnClickHandler"/>
+            android:onClick="fruitBtnClickHandler"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/veg"
+            android:id="@+id/imageView2"
+            android:layout_weight="1"
+            android:onClick="vegBtnClickHandler"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/drink"
+            android:id="@+id/imageView3"
+            android:layout_weight="1"
+            android:onClick="drinkBtnClickHandler"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/food"
+            android:id="@+id/imageView4"
+            android:layout_weight="1"
+            android:onClick="foodBtnClickHandler"
+            android:layout_gravity="center"/>
     </LinearLayout>
 </LinearLayout>

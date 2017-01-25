@@ -1,8 +1,8 @@
 package com.example.mingf.imagenote;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,16 +14,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fruitBtnClickHandler(View view) {
-        showFoodView("Fruit", R.drawable.fruit);
+        showFoodView("Strawberry", R.drawable.fruit);
     }
 
-//    public void vegBtnClickHandler(View view) {
-//        showFoodView("Vegetable", R.drawable.veg);
-//    }
-//
-//    public void drinkBtnClickHandler(View view) {
-//        showFoodView("Drink", R.drawable.drink);
-//    }
+    public void vegBtnClickHandler(View view) {
+        showFoodView("Chili", R.drawable.veg);
+    }
+
+    public void drinkBtnClickHandler(View view) {
+        showFoodView("Soda Drink", R.drawable.drink);
+    }
 
     private void showFoodView(String foodName, int foodImage) {
         Bundle dataBundle = new Bundle();
@@ -36,5 +36,9 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtras(dataBundle); // store data that needed to sent
 
         startActivity(intent); // transmit data from intent
+    }
+
+    public void foodBtnClickHandler(View view) {
+        showFoodView("Food", R.drawable.food);
     }
 }

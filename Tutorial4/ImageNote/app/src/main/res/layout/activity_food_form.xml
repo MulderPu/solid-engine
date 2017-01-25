@@ -20,8 +20,8 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70sp"
+                android:layout_height="120sp"
                 app:srcCompat="@android:drawable/ic_menu_gallery"
                 android:id="@+id/foodImageView"
                 android:layout_weight="1"/>
@@ -113,7 +113,9 @@
                     android:text="@string/yes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/toggleButtonShare" />
+                    android:id="@+id/toggleButtonShare"
+                    android:textOn="@string/yes"
+                    android:textOff="@string/no"/>
 
             </TableRow>
 
@@ -150,9 +152,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/ratingBar"
                     android:numStars="5"
-                    android:stepSize="1.0"
-                    android:scaleX="0.7"
-                    android:scaleY="0.7"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
                     />
             </TableRow>
         </TableLayout>
