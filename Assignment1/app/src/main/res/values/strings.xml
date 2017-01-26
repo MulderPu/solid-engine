@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Assignment 1</string>
+    <string name="programming">Programming</string>
+    <string name="android_java">Android Java</string>
+    <string name="proficiency">Proficiency</string>
+    <string name="c_sharp">C Sharp</string>
+    <string name="personality">Personality</string>
 </resources>

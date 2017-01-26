@@ -1,17 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.mingf.assignment1.MainActivity">
+<FrameLayout android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mingf.assignment1.MainActivity"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#40C4FF">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#76FF03">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        app:srcCompat="@drawable/mikewazo"
+        android:id="@+id/imageView"
+        android:layout_gravity="center|top"
+        android:paddingTop="15sp"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:text="Mike Wazowski"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:id="@+id/textView"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:alpha="0.7"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20sp"
+        android:shrinkColumns="1"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="@string/programming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewProgramming"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:text="@string/android_java"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewProgramming2"
+                android:padding="10sp"
+                android:textColor="#FF0000"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/proficiency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewProficiency"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:text="@string/c_sharp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewProficiency2"
+                android:padding="10sp"
+                android:textColor="#FF0000"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/personality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewPersonality"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewPersonality2"
+                android:padding="10sp"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>
